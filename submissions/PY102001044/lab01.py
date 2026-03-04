@@ -1,6 +1,7 @@
 """
 
 
+
 Lab01.py — Linked List Lab (Auto-graded)
 
 Covers:
@@ -61,7 +62,7 @@ class SinglyLinkedList:
     Time: O(n), Space: O(1)
     """
 
-def reverse_list(head):
+def reverseList(head):
     prev = None
     curr = head
 
@@ -77,7 +78,7 @@ def reverse_list(head):
     # raise NotImplementedError
 
 def doubleIt(head):
-    head = reverse_list(head)
+    head = reverseList(head)
 
     curr = head 
     prev = None 
@@ -93,7 +94,7 @@ def doubleIt(head):
 
     if carry:
         prev.next = Node(carry)
-    return reverse_list(head)
+    return reverseList(head)
 
     """
     LeetCode 2816 — Double a Number Represented as a Linked List
